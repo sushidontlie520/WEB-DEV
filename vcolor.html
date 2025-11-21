@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">    
-    <head>
-        <title>styling with color</title>
-        <meta charset="UTF-8">
-        <style>
-            div{
-                height: 200px;
-                width: 200px;
-                text-align: center;
-            }
+<head>
+    <meta charset="UTF-8">
+    <title>Styling with Color</title>
+
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            border-style: solid;
+            margin-bottom: 20px;
+        }
 
         #analogous {
-            background-color:red;
-            border-color:rgb(255, 153, 0);      
+            background-color: red;
+            border-color: rgb(255, 153, 0);      
             color: blue;
             border-width: 20px;
         }
 
-       
         #complementary {
             background-color: #53ff1e;  
             border-color: rgb(153, 0, 255);
@@ -25,33 +27,28 @@
             border-width: 20px;
         }
 
-        
         #triadic {
             background-color: rgb(255, 153, 0);
             border-color: rgb(0, 255, 13);
-            color: rgb(153, 0, 255)
-
+            color: rgb(153, 0, 255);
+            border-width: 20px;
         }
-
-            
-        </style>
-    </head>
-</body> 
-    <div id="anaolgos">
-        <p>anaolgos</p>
-    </div>
-    
-    <div id="complementary">
-    <p>complementary</p>
-
-    </div>
-    
-    <div id="triadic">
-    <p>triadic</p>
-    </div>
-
     </style>
 </head>
 
+<body>
 
+    <div id="analogous">
+        <p>analogous</p>
+    </div>
+    
+    <div id="complementary">
+        <p>complementary</p>
+    </div>
+    
+    <div id="triadic">
+        <p>triadic</p>
+    </div>
+
+</body>
 </html>
