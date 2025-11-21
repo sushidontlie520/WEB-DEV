@@ -2,67 +2,90 @@
 <html>
 <head>
     <title>Fav sport: ice skating</title>
-
+    
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    
     <style>
+        body {
+            background-color: #87b3d9;
+            color: white;
+            font-family: 'Comic Neue', cursive;   
+            margin: 40px;                         
+        }
+        
         h1 {
             text-align: center;
-            color: white;
+            font-size: 50px;
         }
-
-        body {
-            background-color: #87b3d9; /* light icy blue */
-            color: #ffffff; /* white text */
-            font-family: cursive
+        
+        .all {
+            display: grid;
+            gap: 30px;             
+            max-width: 800px;
+            margin: 0 auto;         
         }
-
+        
+        
+        .box {
+            background-color: rgba(0,0,0,0.2);
+            padding: 25px;          
+            border-radius: 15px;
+        }
+        
         img {
-            height: 150px;
-            border-radius: 6px;
-            margin: 5px;
+            height: 180px;
+            border-radius: 12px;
+            margin: 15px;            
         }
-
-        a {
-            color: #ffffff;
-        }
+        
+        a { color: #ffea8a; }
     </style>
-
 </head>
 <body>
-    <h1>Ice skating</h1>
 
-    <h2>i love ice skating because</h2>
-    font-family: cursive;
-    <p>
-        Ice skating is fun to watch and to do.
-        Its good for ur body to exercise.
-        My fav kind of ice skating is figure skating.
-    </p>
+<div class="all">
+    <h1>Ice Skating</h1>
+    
+    <div class="box">
+        <h2>i love ice skating because</h2>
+        <p>
+            Ice skating is fun to watch and to do.<br>
+            Its good for ur body to exercise.<br>
+            My fav kind of ice skating is figure skating.
+        </p>
+    </div>
+    
+    <div class="box">
+        <h2>My Fav skaters</h2>
+        <p>
+            Some of my favorite skaters include <b>Sonja Henie</b>, <b>Nathan Chen</b>, <b>You Young</b>.<br>
+            I luv these figure skaters bc their rlly talented and show talent, and preform rlly well.
+        </p>
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1-_55RxRhaAI9fe7n86HyQ2PBgZCHj2JvwQ&s" alt="You Young">
+        <img src="https://www.amny.com/wp-content/uploads/2022/02/2022-02-10T060828Z_1_LYNXMPEI19083_RTROPTP_4_OLYMPICS-2022-FIGURESKATING-scaled.jpg?quality=51" alt="Nathan Chen">
+        
+        <br>
+        <a href="https://people.com/sports/beijing-olympics-2022-nathan-chen-mens-short-program-figure-skating/" target="_blank">
+            link to story abt Nathan Chen
+        </a>
+    </div>
+    
+    <div class="box">
+        <h1>my personal fav skaters</h1>
+        <ol>
+            <li>Sui Wenjing and Han Cong (duo)</li>
+            <li>Nathan Chen</li>
+            <li>You Young</li>
+            <li>Alexandra Trusova</li>
+            <li>Tony Harding</li>
+        </ol>
+    </div>
+    
+    <div class="box">
+        <p>Created by Charlie Cogswell</p>
+    </div>
+</div>
 
-    <h2>My Fav skaters</h2>
-    <p>
-        Some of my favorite sakters include *Sonja Henie*, *Nathan Chen*, *You Young*
-        I luv these figure skaters bc their rlly talented and show talent, and preform rlly well.
-    </p>
-
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1-_55RxRhaAI9fe7n86HyQ2PBgZCHj2JvwQ&s" alt="figure skater You Young"/>
-
-    <img src="https://www.amny.com/wp-content/uploads/2022/02/2022-02-10T060828Z_1_LYNXMPEI19083_RTROPTP_4_OLYMPICS-2022-FIGURESKATING-scaled.jpg?quality=51" alt="figure skater Nathen Chen"/>
-
-    <br>
-    <a href="https://people.com/sports/beijing-olympics-2022-nathan-chen-mens-short-program-figure-skating/" target="_blank">
-        link to story abt Nathan Chen
-    </a>
-
-    <h1>my personal fav skaters</h1>
-    <ol>
-        <li>Sui Wenjing and Han Cong(duo)</li>
-        <li>Nathan Chen</li>
-        <li>You Young</li>
-        <li>Alexandra Trusova</li>
-        <li>Tony Harding</li>
-    </ol>
-
-    <br>
-    <p>Created by Charlie Cogswell </p>
-</body> 
+</body>
 </html>
