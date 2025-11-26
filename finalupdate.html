@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fav sport: ice skating</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #87b3d9;
+            color: white;
+            font-family: 'Comic Neue', cursive;   
+            margin: 40px;                         
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+        
+        .all {
+            display: grid;
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .box {
+            background-color: rgba(0,0,0,0.2);
+            padding: 25px;
+            border-radius: 15px;
+        }
+        
+        img {
+            height: 180px;
+            border-radius: 12px;
+            margin: 15px;
+            transition: 0.3s;
+        }
+
+        a { color: #ffffff; }
+
+        /* HIDDEN section styling */
+        #extraSection {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="all">
+    <h1>Ice Skating</h1>
+    
+    <div class="box">
+        <h2>I love ice skating because</h2>
+        <p>
+            Ice skating is fun to watch and to do.<br>
+            It's good for your body to exercise.<br>
+            My fav kind of ice skating is figure skating.
+        </p>
+    </div>
+    
+    <div class="box">
+        <h2>My Fav Skaters</h2>
+        <p>
+            Some of my favorite skaters include <b>Sonja Henie</b>, <b>Nathan Chen</b>, <b>You Young</b>.<br>
+            I love these figure skaters because they’re super talented and perform really well.
+        </p>
+        
+        <!-- HOVER-CHANGE IMAGE -->
+        <img 
+            id="hoverImg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1-_55RxRhaAI9fe7n86HyQ2PBgZCHj2JvwQ&s"
+            alt="You Young"
+            onmouseover="this.src='https://i.pinimg.com/originals/aa/6c/23/aa6c23f02cbecac4f0732f786c2fffb4.jpg'"
+            onmouseout="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1-_55RxRhaAI9fe7n86HyQ2PBgZCHj2JvwQ&s'"
+        >
+
+        <img src="https://www.amny.com/wp-content/uploads/2022/02/2022-02-10T060828Z_1_LYNXMPEI19083_RTROPTP_4_OLYMPICS-2022-FIGURESKATING-scaled.jpg?quality=51" alt="Nathan Chen">
+        
+        <br>
+        <a href="https://people.com/sports/beijing-olympics-2022-nathan-chen-mens-short-program-figure-skating/" target="_blank">
+            Link to story about Nathan Chen
+        </a>
+    </div>
+    
+    <div class="box">
+        <h1>My Personal Fav Skaters</h1>
+        <ol>
+            <li>Sui Wenjing and Han Cong (duo)</li>
+            <li>Nathan Chen</li>
+            <li>You Young</li>
+            <li>Alexandra Trusova</li>
+            <li>Tony Harding</li>
+        </ol>
+    </div>
+
+    <!-- SHOW/HIDE SECTION -->
+    <div class="box">
+        <button onclick="toggleExtra()" style="padding:10px 20px; font-size:18px; border-radius:10px;">
+            Show More
+        </button>
+
+        <div id="extraSection">
+            <p>
+               Its rlly cool because its rlly cool
+            </p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Figure_skating_2010_NRW_Trophy_Gala_2.jpg/640px-Figure_skating_2010_NRW_Trophy_Gala_2.jpg">
+        </div>
+    </div>
+    
+    <div class="box">
+        <p>Created by Charlie Cogswell</p>
+    </div>
+</div>
+
+<script>
+    function toggleExtra() {
+        const section = document.getElementById("extraSection");
+        const button = event.target;
+
+        if (section.style.display === "none") {
+            section.style.display = "block";
+            button.textContent = "Hide";
+        } else {
+            section.style.display = "none";
+            button.textContent = "Show More";
+        }
+    }
+</script>
+
+</body>
+</html>
