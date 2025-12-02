@@ -1,92 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fav sport: ice skating</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
-    
+    <title>Strawberries</title>
+ 
+
     <style>
-        body {
-            background-color: #87b3d9;
-            color: white;
-            font-family: 'Comic Neue', cursive;   
-            margin: 40px;                         
+        #secret {
+            width: 200px;
+            display: none;
         }
-        
-        h1 {
+
+        #hover-area:hover + #secret {
+            display: block;
+        }
+
+        #hover-area {
+            width: 200px;
+            height: 50px;
+            background-color: rgb(231, 197, 197);
+            margin-top: 20px;
             text-align: center;
-            font-size: 50px;
+            padding-top: 15px;
+            cursor: pointer;
         }
-        
-        .all {
-            display: grid;
-            gap: 30px;             
-            max-width: 800px;
-            margin: 0 auto;         
-        }
-        
-        
-        .box {
-            background-color: rgba(0,0,0,0.2);
-            padding: 25px;          
-            border-radius: 15px;
-            
-        }
-        
-        img {
-            height: 180px;
-            border-radius: 12px;
-            margin: 15px;            
-        }
-        
-        a { color: #ffea8a; }
     </style>
 </head>
+
 <body>
 
-<div class="all">
-    <h1>Ice Skating</h1>
-    
-    <div class="box">
-        <h2>i love ice skating because</h2>
-        <p>
-            Ice skating is fun to watch and to do.<br>
-            Its good for ur body to exercise.<br>
-            My fav kind of ice skating is figure skating.
-        </p>
-    </div>
-    
-    <div class="box">
-        <h2>My Fav skaters</h2>
-        <p>
-            Some of my favorite skaters include <b>Sonja Henie</b>, <b>Nathan Chen</b>, <b>You Young</b>.<br>
-            I luv these figure skaters bc their rlly talented and show talent, and preform rlly well.
-        </p>
-        
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1-_55RxRhaAI9fe7n86HyQ2PBgZCHj2JvwQ&s" alt="You Young">
-        <img src="https://www.amny.com/wp-content/uploads/2022/02/2022-02-10T060828Z_1_LYNXMPEI19083_RTROPTP_4_OLYMPICS-2022-FIGURESKATING-scaled.jpg?quality=51" alt="Nathan Chen">
-        
-        <br>
-        <a href="https://people.com/sports/beijing-olympics-2022-nathan-chen-mens-short-program-figure-skating/" target="_blank">
-            link to story abt Nathan Chen
-        </a>
-    </div>
-    
-    <div class="box">
-        <h1>Things that were</h1>
-        <ol>
-            <li>Sui Wenjing and Han Cong (duo)</li>
-            <li>Nathan Chen</li>
-            <li>You Young</li>
-            <li>Alexandra Trusova</li>
-            <li>Tony Harding</li>
-        </ol>
-    </div>
-    
-    <div class="box">
-        <p>Created by Charlie Cogswell</p>
-    </div>
-</div>
+    <h1>Strawberries</h1>
 
+    <p>Strawberries are rlly yummy. they are good for baking. They also are really good in smoothies</p>
+
+    <h2>Why are they so famous??</h2>
+    <p>Strawberries r rlly popular bc of their taste. I rlly like strawberries bc i rlly like fruit. there are sum rlly good strawberry farms.</p>
+
+    <h2>Things that strawberries can do</h2>
+    <ul>
+        <li>help health</li>
+        <li>Taste good</li>
+        <li>Good for baking</li>
+    </ul>
+
+    <img src="https://www.dole.com/sites/default/files/styles/1024w768h-80/public/media/2025-01/strawberries.png?itok=YwuQG1_Q-rBQD7hNl" width="300" alt="Dole Strawberry image">
+
+       <img id="secret"
+         src="https://akns-images.eonline.com/eol_images/Entire_Site/2022925/rs_1200x1200-221025103857-1200-Jojo.jpg?fit=around%7C1200:1200&output-quality=90&crop=1200:1200;center,top" width="100px">
+         alt="Hidden Image"> 
+    <div id="hover-area">Hover here</div>
+<p>Created by Charlie Cogswell</p>
 </body>
 </html>
