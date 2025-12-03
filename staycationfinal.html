@@ -1,13 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>St. George Utah</title>
+    <title>St. George for vacation!</title>
+     
+    <style>
+        body {
+            background-color: #e7cfb0;
+            color: rgb(119, 67, 67);
+            font-family: 'Times New Roman', Times, serif;   
+            margin: 40px;                         
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+        
+        .all {
+            display: grid;
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .box {
+            background-color: rgba(0,0,0,0.2);
+            padding: 25px;
+            border-radius: 15px;
+        }
+        
+        img {
+            height: 180px;
+            border-radius: 12px;
+            margin: 15px;
+            transition: 0.3s;
+        }
+
+        a { color: #ffffff; }
+
+        /* HIDDEN section styling */
+        #extraSection {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Visit St. George Utah</h1>
-    <img src="https://cdn.shopify.com/s/files/1/0054/5043/2598/files/sand-hollow-state-park.jpg?v=1620310461" alt="image of St. George Utah" height="200px" widith="200px"/>
-    <p>St. George Utah is one of teh most popular locations for vacation in utah. Known for the hot weather and the river. St George is very popular for vacation for being a tropical side of Utah.</p>    
+
+<div class="all">
+    <h1>St. George for vacation!</h1>
+    
+    <div class="box">
+        <h2>What's so good about St. George?</h2>
+        <p>
+            St. George is a veyr popular vactaion location for people in Utah, me personally I visit there almost every year!
+            The weather is hot which makes it a very good spot for winter time(maybe skip during summer time).
+            I enjoy going there because it's the tropical side of utah. 
+            Utah is a desert but lakcs some of the desert qualities, which is why St. George is my personal pick for a vacation!
+        </p>
+    </div>
+    
+    <div class="box">
+        <h2>Best times to go</h2>
+        <p>
+        The best time to go to St. George is during winter break, spring break and fall break.
+        St george is a good place to go to besides from summer, the main reason being that it's EXTREMELY hot. 
+        St. George set the record for the highest heat in Utah ever at 47.2 degreees celsius!(117 degrees farenheit).
+        </p>
+        
+        <img 
+            id="hoverImg"
+            src=""
+            alt=""
+             onmouseover="this.src='https://i.pinimg.com/originals/aa/6c/23/aa6c23f02cbecac4f0732f786c2fffb4.jpg'"
+            onmouseout="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1-_55RxRhaAI9fe7n86HyQ2PBgZCHj2JvwQ&s'"
+        >
+
+        <img src="" alt="">
+        
+        <br>
+        <a href="" target="_blank">
+            St. George history
+        </a>
+    </div>
+    
+    <div class="box">
+        <h1>Best Hotels</h1>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+
+    <div class="box">
+        <button onclick="toggleExtra()" style="padding:10px 20px; font-size:18px; border-radius:10px;">
+            Show More
+        </button>
+
+        <div id="extraSection">
+            <p>
+            Bring sunscreen, hats, clothes and WATER. 
+            </p>
+            <img src=
+    </div>
+    
+    <div class="box">
+        <p>Created by Charlie Cogswell</p>
+    </div>
+</div>
+
+<script>
+    function toggleExtra() {
+        const section = document.getElementById("extraSection");
+        const button = event.target;
+
+        if (section.style.display === "none") {
+            section.style.display = "block";
+            button.textContent = "Hide";
+        } else {
+            section.style.display = "none";
+            button.textContent = "Show More";
+        }
+    }
+</script>
+
 </body>
 </html>
